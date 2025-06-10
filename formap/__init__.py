@@ -11,11 +11,8 @@ from .models.field import (
 )
 
 # Services
-from .services import (
-    FormDetector,
-    DetectionOptions,
-    FormFiller,
-)
+from .services.detector import FormDetector, DetectionOptions
+from .services.filler import FormFiller
 
 # Utils
 from .utils import (

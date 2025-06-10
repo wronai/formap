@@ -1,3 +1,7 @@
+.idea
+# This is a sample .gitignore file for Python projects.
+poetry.lock
+venv
 # Python
 __pycache__/
 *.py[cod]
