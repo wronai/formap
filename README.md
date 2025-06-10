@@ -71,6 +71,12 @@ source venv/bin/activate
 python form-mapper/map_fields.py https://przykladowa-strona.pl/logowanie
 ```
 
+```
+python form-mapper/auto_map_form.py https://bewerbung.jobs/325696/buchhalter-m-w-d
+python form-mapper/auto_fill_form.py https://bewerbung.jobs/325696/buchhalter-m-w-d
+```
+
+
 Postępuj zgodnie z instrukcjami na ekranie, przechodząc przez pola formularza klawiszem Tab. Naciśnij 's' aby zapisać lub 'q' aby wyjść bez zapisywania.
 
 ### 2. Wypełnianie formularza / Fill a Form
