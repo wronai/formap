@@ -1,28 +1,34 @@
-# 🧠 FORMAP - Form Mapper & Auto-Filler
+# 🧠 FORMAP - Advanced Form Mapper & Auto-Filler
 
-[English below] Automatyczne mapowanie i wypełnianie formularzy internetowych przy użyciu Playwright.
+[English below] Zaawansowane narzędzie do mapowania i automatycznego wypełniania formularzy internetowych przy użyciu Playwright i sztucznej inteligencji.
 
 ## ✨ Funkcje
 
-- 🔍 Mapowanie pól formularza poprzez przechodzenie między nimi klawiszem Tab
+- 🔍 Automatyczne wykrywanie pól formularza z zaawansowanym mapowaniem
+- 🤖 Integracja z lokalnym modelem językowym (LLM) dla lepszego rozumienia formularzy
+- 📁 Obsługa załączników (CV, listy motywacyjne, itp.)
+- 🎯 Inteligentne dopasowywanie etykiet do pól formularza
 - 💾 Zapis mapowania pól do pliku JSON
 - 🚀 Automatyczne wypełnianie formularzy na podstawie zapisanego mapowania
-- 🔒 Obsługa wszystkich standardowych pól formularza (tekst, wybór, radio, checkbox, itp.)
-- 🐍 Prosty interfejs w języku Python
+- 🔒 Obsługa wszystkich standardowych pól formularza (tekst, wybór, radio, checkbox, pliki, itp.)
+- 🐍 Prosty interfejs wiersza poleceń i API Pythona
 
 ---
 
-# 🧠 FORMAP - Form Mapper & Auto-Filler
+# 🧠 FORMAP - Advanced Form Mapper & Auto-Filler
 
-Automatically map and fill web forms with ease using Playwright.
+Automatically map and fill web forms with ease using Playwright and AI.
 
 ## ✨ Features
 
-- 🔍 Map HTML form fields by tabbing through them
-- 💾 Save field mappings to a JSON file
+- 🔍 Automatic form field detection with advanced mapping
+- 🤖 Local Language Model (LLM) integration for better form understanding
+- 📁 File upload support (CVs, cover letters, etc.)
+- 🎯 Smart label-to-field association
+- 💾 Save field mappings to JSON files
 - 🚀 Automatically fill forms using saved mappings
-- 🔒 Supports all standard form fields (text, select, radio, checkbox, etc.)
-- 🐍 Simple Python API
+- 🔒 Supports all standard form fields (text, select, radio, checkbox, file uploads, etc.)
+- 🐍 Simple CLI and Python API
 
 ## 🚀 Szybki start / Quick Start
 
@@ -30,25 +36,31 @@ Automatically map and fill web forms with ease using Playwright.
 
 - Python 3.8+
 - Git (do sklonowania repozytorium / for cloning the repository)
+- [Poetry](https://python-poetry.org/) (do zarządzania zależnościami / for dependency management)
 
 ### Instalacja / Installation
 
-1. **Sklonuj repozytorium / Clone the repository**:
+1. **Zainstaluj Poetry (jeśli nie jest zainstalowany) / Install Poetry (if not installed)**:
+   ```bash
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+
+2. **Sklonuj repozytorium / Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/formap.git
    cd formap
    ```
 
-2. **Skonfiguruj środowisko / Set up the environment**:
+3. **Skonfiguruj środowisko / Set up the environment**:
    ```bash
-   # Utwórz i aktywuj środowisko wirtualne
-   # Create and activate virtual environment
-   python -m venv venv
-   source venv/bin/activate  # Na Windows: venv\Scripts\activate
-   
    # Zainstaluj zależności
    # Install dependencies
-   pip install -r form-mapper/requirements.txt
+   poetry install
+   
+   # Zainstaluj przeglądarkę do testów
+   # Install browser for testing
+   poetry run playwright install
+   ```
    
    # Zainstaluj przeglądarki Playwright
    # Install Playwright browsers
@@ -71,26 +83,49 @@ source venv/bin/activate
 python form-mapper/map_fields.py https://przykladowa-strona.pl/logowanie
 ```
 
+# Włącz szczegółowe logowanie / Enable debug logging
+poetry run formap --debug detect https://example.com/form
 ```
-python form-mapper/auto_map_form.py https://bewerbung.jobs/325696/buchhalter-m-w-d
-python form-mapper/auto_fill_form.py https://bewerbung.jobs/325696/buchhalter-m-w-d
-```
-
-
-Postępuj zgodnie z instrukcjami na ekranie, przechodząc przez pola formularza klawiszem Tab. Naciśnij 's' aby zapisać lub 'q' aby wyjść bez zapisywania.
 
 ### 2. Wypełnianie formularza / Fill a Form
 
-Aby wypełnić formularz używając zapisanego mapowania / To fill a form using a saved mapping:
+Aby wypełnić formularz używając danych z pliku / To fill a form using data file:
 
 ```bash
-# Aktywuj środowisko wirtualne jeśli nieaktywne
-# Activate virtual environment if not already activated
-source venv/bin/activate
+# Wypełnij formularz używając danych z pliku
+# Fill form using data file
+poetry run formap fill https://example.com/form --data form_data.json
 
-# Uruchom wypełnianie
-# Run the filler
-python form-mapper/fill_form.py form_map.json
+# Użyj niestandardowego mapowania pól / Use custom field mapping
+poetry run formap fill https://example.com/form --data form_data.json --mapping form_map.json
+
+# Uruchom w trybie bezinterakcyjnym / Run in headless mode
+poetry run formap fill https://example.com/form --data form_data.json --headless
+```
+
+### 3. Użycie z kodu Pythona / Using from Python Code
+
+```python
+import asyncio
+from formap import FormDetector, FormFiller
+
+async def main():
+    # Mapowanie formularza / Form mapping
+    async with FormDetector() as detector:
+        fields = await detector.detect("https://example.com/form")
+        print(f"Znaleziono {len(fields)} pól formularza")
+    
+    # Wypełnianie formularza / Form filling
+    async with FormFiller() as filler:
+        await filler.fill(
+            "https://example.com/form",
+            data={"username": "test", "email": "test@example.com"},
+            mapping=fields,
+            headless=True
+        )
+
+if __name__ == "__main__":
+    asyncio.run(main())
 ```
 
 ## 📋 Przykłady użycia / Usage Examples
@@ -100,10 +135,10 @@ python form-mapper/fill_form.py form_map.json
 ```bash
 # Mapowanie formularza logowania
 # Mapping a login form
-python form-mapper/map_fields.py https://przykladowa-strona.pl/logowanie
+poetry run formap detect https://example.com/login
 # Po zapisaniu mapowania, wypełnij formularz
 # After saving the mapping, fill the form
-python form-mapper/fill_form.py form_map.json
+poetry run formap fill https://example.com/login --data login_data.json
 ```
 
 ### Przykład 2: Rejestracja / Example 2: Registration Form
@@ -111,10 +146,10 @@ python form-mapper/fill_form.py form_map.json
 ```bash
 # Mapowanie formularza rejestracji
 # Mapping a registration form
-python form-mapper/map_fields.py https://przykladowa-strona.pl/rejestracja
+poetry run formap detect https://example.com/register
 # Wypełnij formularz danymi
 # Fill the form with data
-python form-mapper/fill_form.py form_map.json
+poetry run formap fill https://example.com/register --data register_data.json
 ```
 
 ### Przykład 3: Formularz kontaktowy / Example 3: Contact Form
@@ -122,10 +157,10 @@ python form-mapper/fill_form.py form_map.json
 ```bash
 # Mapowanie formularza kontaktowego
 # Mapping a contact form
-python form-mapper/map_fields.py https://przykladowa-strona.pl/kontakt
+poetry run formap detect https://example.com/contact
 # Wypełnij i wyślij formularz
 # Fill and submit the form
-python form-mapper/fill_form.py form_map.json
+poetry run formap fill https://example.com/contact --data contact_data.json
 ```
 
 ## 🐳 Uruchamianie w Dockerze / Docker Support
@@ -137,10 +172,10 @@ Możesz również uruchomić FORMAP używając Dockera / You can also run FORMAP
 docker build -t formap .
 
 # Uruchom mapowanie / Run the mapper
-docker run -it --rm -v $(pwd):/app formap python map_fields.py https://przykladowa-strona.pl/formularz
+docker run -it --rm -v $(pwd):/app formap poetry run formap detect https://example.com/form
 
 # Uruchom wypełnianie / Run the filler
-docker run -it --rm -v $(pwd):/app formap python fill_form.py form_map.json
+docker run -it --rm -v $(pwd):/app formap poetry run formap fill https://example.com/form --data form_data.json
 ```
 
 ## 📁 Project Structure

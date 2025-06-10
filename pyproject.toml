@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "formap"
-version = "0.1.0"
+version = "0.1.1"
 description = "Automated form filling and mapping tool with LLM integration"
 authors = ["Tom Sapletta <info@softreck.dev>"]
 license = "Apache-2.0"

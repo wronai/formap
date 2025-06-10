@@ -35,6 +35,7 @@ clean:
 
 # Build the package
 build:
+	poetry version patch
 	poetry build
 
 # Publish the package to PyPI
