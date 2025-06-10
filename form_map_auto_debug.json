@@ -8,10 +8,8 @@
     "label": "Vorname:*",
     "required": true,
     "disabled": false,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//*[@id=\"lastName\"]",
@@ -22,10 +20,8 @@
     "label": "Nachname:*",
     "required": true,
     "disabled": false,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//*[@id=\"telephone\"]",
@@ -36,10 +32,8 @@
     "label": "Telefon:*",
     "required": true,
     "disabled": false,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//*[@id=\"email\"]",
@@ -50,10 +44,8 @@
     "label": "E-Mail:*",
     "required": true,
     "disabled": false,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "/html/body/input",
@@ -64,10 +56,8 @@
     "label": "",
     "required": false,
     "disabled": false,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "image/png,image/jpg,image/jpeg,image/gif,image/tiff,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,application/vnd.oasis.opendocument.text",
-    "isFileInput": true
+    "isFileInput": true,
+    "accept": "image/png,image/jpg,image/jpeg,image/gif,image/tiff,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,application/vnd.oasis.opendocument.text"
   },
   {
     "xpath": "//*[@id=\"submit-button\"]",
@@ -78,10 +68,8 @@
     "label": "",
     "required": false,
     "disabled": false,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[1]/label[1]",
@@ -92,10 +80,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[1]/label[2]",
@@ -106,10 +92,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[1]/label[3]",
@@ -120,10 +104,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[2]/div[1]/label",
@@ -134,10 +116,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[2]/div[2]/label",
@@ -148,10 +128,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[3]/div[1]/label",
@@ -162,10 +140,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[3]/div[2]/label",
@@ -176,10 +152,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[3]/label[1]",
@@ -190,10 +164,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[3]/label[2]",
@@ -204,10 +176,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[2]/div",
@@ -218,10 +188,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//*[@id=\"documents\"]",
@@ -232,10 +200,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//div[@id=\"documents\"]/div",
@@ -246,10 +212,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//*[@id=\"previews\"]",
@@ -260,10 +224,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//div[@id=\"preview-template\"]/div",
@@ -274,10 +236,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//div[@id=\"preview-template\"]/div/div[1]",
@@ -288,10 +248,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//div[@id=\"preview-template\"]/div/div[2]/div",
@@ -302,10 +260,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//*[@id=\"applyForm\"]",
@@ -316,10 +272,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[2]",
@@ -330,10 +284,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[2]/div[1]",
@@ -344,10 +296,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[2]/div[2]",
@@ -358,10 +308,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[3]",
@@ -372,10 +320,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[3]/div[1]",
@@ -386,10 +332,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//form[@id=\"applyForm\"]/div[1]/div[3]/div[2]",
@@ -400,10 +344,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//*[@id=\"documents\"]",
@@ -414,10 +356,8 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   },
   {
     "xpath": "//div[@id=\"documents\"]/div",
@@ -428,9 +368,7 @@
     "label": "",
     "required": false,
     "disabled": null,
-    "readOnly": false,
-    "multiple": false,
-    "accept": "",
-    "isFileInput": false
+    "isFileInput": false,
+    "accept": ""
   }
 ]
