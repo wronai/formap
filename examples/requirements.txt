@@ -1,0 +1,6 @@
+# Requirements for running the Formap examples
+-r ../requirements.txt  # Include main project requirements
+
+# Additional dependencies for examples
+pytest-playwright  # For running Playwright tests
+python-dotenv     # For loading environment variables

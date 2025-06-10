@@ -2,7 +2,8 @@
 import pytest
 from pathlib import Path
 
-from formap.form_detector import FormDetector, FormField, FieldType
+from formap.services.detector import FormDetector, DetectionOptions
+from formap.models.field import FormField, FieldType
 
 SIMPLE_FORM_HTML = """
 <!DOCTYPE html>
