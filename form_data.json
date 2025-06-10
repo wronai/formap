@@ -1,0 +1,36 @@
+{
+  "personal_info": {
+    "salutation": "Frau",
+    "first_name": "Anna",
+    "last_name": "Nowak",
+    "email": "anna.nowak@example.com",
+    "phone": "+48 123 456 789",
+    "address": "ul. Przykładowa 123, 00-001 Warszawa"
+  },
+  "education": [
+    {
+      "degree": "Magister",
+      "field": "Rachunkowość i Finanse",
+      "university": "Uniwersytet Warszawski",
+      "year": 2015
+    }
+  ],
+  "experience": [
+    {
+      "position": "Księgowa",
+      "company": "Przykładowa Sp. z o.o.",
+      "period": "2018 - obecnie",
+      "responsibilities": [
+        "Prowadzenie pełnej księgowości",
+        "Sporządzanie sprawozdań finansowych",
+        "Rozliczenia z urzędami skarbowymi i ZUS"
+      ]
+    }
+  ],
+  "skills": ["Księgowość", "Kadry i płace", "JPK", "VAT", "CIT"],
+  "languages": [
+    {"name": "Polski", "level": "ojczysty"},
+    {"name": "Angielski", "level": "zaawansowany"},
+    {"name": "Niemiecki", "level": "średnio zaawansowany"}
+  ]
+}

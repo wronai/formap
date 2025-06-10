@@ -1,0 +1,95 @@
+{
+  "url": "https://bewerbung.jobs/325696/buchhalter-m-w-d",
+  "fields": [
+    {
+      "xpath": "/html/body/div[3]/div/a",
+      "type": "a",
+      "name": "",
+      "label": ""
+    },
+    {
+      "xpath": "//*[@id=\"salutationW\"]",
+      "type": "radio",
+      "name": "salutation",
+      "label": "Frau"
+    },
+    {
+      "xpath": "//*[@id=\"firstName\"]",
+      "type": "text",
+      "name": "firstName",
+      "label": "Vorname:*"
+    },
+    {
+      "xpath": "//*[@id=\"lastName\"]",
+      "type": "text",
+      "name": "lastName",
+      "label": "Nachname:*"
+    },
+    {
+      "xpath": "//*[@id=\"telephone\"]",
+      "type": "text",
+      "name": "telephone",
+      "label": "Telefon:*"
+    },
+    {
+      "xpath": "//*[@id=\"email\"]",
+      "type": "email",
+      "name": "email",
+      "label": "E-Mail:*"
+    },
+    {
+      "xpath": "//*[@id=\"applyForm\"]/div[3]/label/input",
+      "type": "checkbox",
+      "name": "privacyChecked",
+      "label": "Ich habe die\n                                    Datenschutzerklärung\n                            gelesen und stimme dieser zu."
+    },
+    {
+      "xpath": "//*[@id=\"applyForm\"]/div[3]/label[2]/input",
+      "type": "checkbox",
+      "name": "termsOfUseChecked",
+      "label": "Ich akzeptiere die\n                                Nutzungsbedingungen"
+    },
+    {
+      "xpath": "/html/body/div[3]/div[6]/div[3]/div/a",
+      "type": "a",
+      "name": "",
+      "label": ""
+    },
+    {
+      "xpath": "/html/body/div[3]/div[6]/div[3]/div/a[2]",
+      "type": "a",
+      "name": "",
+      "label": ""
+    },
+    {
+      "xpath": "/html/body/div[3]/div[6]/div[3]/div/a[3]",
+      "type": "a",
+      "name": "",
+      "label": ""
+    },
+    {
+      "xpath": "/html/body/div[3]/div[7]/div[2]/a",
+      "type": "a",
+      "name": "",
+      "label": ""
+    },
+    {
+      "xpath": "/html/body/div[3]/div[7]/div[2]/a[2]",
+      "type": "a",
+      "name": "",
+      "label": ""
+    },
+    {
+      "xpath": "/html/body/div[3]/div[7]/div[2]/a[3]",
+      "type": "a",
+      "name": "",
+      "label": ""
+    },
+    {
+      "xpath": "/html/body",
+      "type": "body",
+      "name": "",
+      "label": "Frau"
+    }
+  ]
+}
