@@ -45,7 +45,6 @@ httpx = "^0.25.0"
 
 [tool.poetry.group.docs]
 optional = true
-description = "Documentation dependencies"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.5.3"
